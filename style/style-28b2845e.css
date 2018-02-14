@@ -1,0 +1,440 @@
+@charset "UTF-8";
+html {
+  height: 100%; }
+
+body {
+  position: relative;
+  font-family: "oswald light" !important;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+/*
+-------------------------------------------------------------------
+SCROLLBAR STYLE
+-------------------------------------------------------------------
+*/
+body::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #fff; }
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: #0aa88d; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0aa88d;
+  height: 50px; }
+
+body::-webkit-scrollbar-track-piece {
+  height: 30px; }
+
+.container {
+  min-width: 1024px;
+  max-width: 60%;
+  margin: auto; }
+
+.container-competence {
+  min-width: 824px;
+  margin: auto;
+  display: block; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+/*
+Style for Header presentation
+*/
+.green {
+  color: #00515c !important;
+  font-family: "oswald" !important; }
+
+.red {
+  background: #1dac96 !important; }
+  .red a {
+    color: #fff !important; }
+
+.section-contenu {
+  background: #fff;
+  padding: 40px; }
+
+.mTop {
+  margin-top: 65px; }
+
+/*
+Style for Compétences
+*/
+.title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #00515c;
+  font-family: "oswald" !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+.homePage {
+  background: #1dac96;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-family: "oswald";
+  text-transform: uppercase; }
+  .homePage .welcome {
+    font-size: 4em;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 30%;
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%); }
+  .homePage .contentCenter {
+    position: absolute;
+    width: 140px;
+    max-width: 100%;
+    left: 50%;
+    top: 50%;
+    color: #888;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .homePage .contentCenter .btnHome {
+      cursor: pointer;
+      padding: 20px;
+      background: #fff;
+      text-align: center;
+      border: 5px outset #fff;
+      -webkit-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      margin-bottom: 10%;
+      -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+              box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25); }
+      .homePage .contentCenter .btnHome:hover {
+        background: #eee;
+        color: #777 !important; }
+  @media (max-width: 800px) {
+    .homePage .contentCenter {
+      width: 70px; }
+    .homePage .flex {
+      display: block; }
+    .homePage .welcome {
+      font-size: 2em; } }
+
+.downloadCv {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #fff;
+  width: 150px;
+  min-width: 5%;
+  margin: auto;
+  margin-top: 50px; }
+  .downloadCv a {
+    text-decoration: none;
+    color: #fff; }
+
+/*
+------------------------------------------------------
+STYLE FOR HEADER PRESENTATION
+------------------------------------------------------
+*/
+.Typist .Cursor {
+  display: none; }
+
+.headerPresentation {
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  position: relative; }
+  .headerPresentation .info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%; }
+    .headerPresentation .info .titleJob {
+      font-size: 3em;
+      text-transform: uppercase;
+      font-family: "oswald" !important;
+      font-weight: bold; }
+    .headerPresentation .info .textPresentation {
+      margin-top: 40px;
+      line-height: 1.9em;
+      font-size: 20px; }
+    .headerPresentation .info .downloadCv {
+      padding-left: 15px;
+      text-align: center;
+      padding-right: 15px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      width: 150px;
+      min-width: 100px;
+      margin: auto;
+      margin-top: 40px;
+      border: 2px solid #fff; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+ * react-circular-progressbar styles
+ *
+ * All of the styles in this file are optional and configurable!
+ */
+.CircularProgressbar {
+  /*
+     * This fixes an issue where the CircularProgressbar svg has
+     * 0 width inside a "display: flex" container, and thus not visible.
+     *
+     * If you're not using "display: flex", you can remove this style.
+     */
+  width: 100%; }
+
+.CircularProgressbar .CircularProgressbar-path {
+  stroke: #1dac96;
+  stroke-linecap: square;
+  -webkit-transition: stroke-dashoffset 0.5s ease 0s;
+  transition: stroke-dashoffset 0.5s ease 0s; }
+
+.CircularProgressbar .CircularProgressbar-trail {
+  stroke: #e0e0e0; }
+
+.CircularProgressbar .CircularProgressbar-text {
+  fill: #1dac96;
+  font-size: 18px;
+  dominant-baseline: middle;
+  text-anchor: middle; }
+
+.CircularProgressbar .CircularProgressbar-background {
+  fill: #d6d6d6; }
+
+/*
+   * Sample background styles. Use these with e.g.:
+   *
+   *   <CircularProgressbar
+   *     className="CircularProgressbar-inverted"
+   *     background
+   *     percentage={50}
+   *   />
+   */
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background {
+  fill: #3e98c7; }
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
+  fill: #fff; }
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path {
+  stroke: #fff; }
+
+.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail {
+  stroke: transparent; }
+
+#competences {
+  overflow-y: scroll;
+  width: 90%;
+  height: 85vh;
+  position: relative; }
+
+.sectionCompetences {
+  text-align: center; }
+  .sectionCompetences .title-text h5 {
+    color: #557780;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 38px;
+    margin-bottom: 38px; }
+  .sectionCompetences .bloc-developpement-web .bloc {
+    margin-bottom: 40px; }
+    .sectionCompetences .bloc-developpement-web .bloc .circle-info .circularStyle {
+      width: 130px;
+      height: 130px;
+      margin-right: 30px;
+      margin-top: 10px; }
+      .sectionCompetences .bloc-developpement-web .bloc .circle-info .circularStyle:last-child {
+        margin-right: 0; }
+    .sectionCompetences .bloc-developpement-web .bloc .circle-name {
+      margin-left: -30px;
+      font-weight: 700;
+      color: #1dac96;
+      padding: 20px;
+      text-transform: uppercase;
+      font-size: 0.8em; }
+
+.no-mright {
+  margin-right: 0 !important; }
+
+.mright {
+  margin-left: 0 !important; }
+
+#competences::-webkit-scrollbar-track {
+  border-radius: 0px;
+  background-color: #e0e0e0; }
+
+#competences::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0aa88d; }
+
+#competences::-webkit-scrollbar-thumb {
+  background-color: #0aa88d;
+  height: 50px; }
+
+#competences::-webkit-scrollbar-track-piece {
+  height: 30px; }
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  margin-top: -100px; }
+  .center .downloadCv {
+    padding-left: 15px;
+    text-align: center;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 150px;
+    min-width: 100px;
+    margin: auto;
+    margin-top: 40px;
+    border: 1px solid #1dac96;
+    background: #1dac96; }
+
+/**
+   * Footer Styles
+   */
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background: #eee;
+  min-height: 300px;
+  padding: 20px;
+  margin-bottom: -390.6px; }
+  .site-footer div.footer-social {
+    text-align: center;
+    width: 100%; }
+    .site-footer div.footer-social li {
+      display: inline-block; }
+      .site-footer div.footer-social li a {
+        padding-top: 24px;
+        margin-left: 12px;
+        margin-right: 12px; }
+  .site-footer .identity {
+    position: absolute;
+    background: #00515c;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    color: white; }
+    .site-footer .identity p {
+      color: white; }
+
+img.footerTwitter:hover,
+img.footerGithub:hover,
+img.footerGoogleplus:hover,
+img.footerLinkedin:hover {
+  -webkit-animation: stretch 2s infinite ease-in-out;
+          animation: stretch 2s infinite ease-in-out; }
+
+/*
+------------------------------------------------------
+STYLE FOR NAVIGATION
+------------------------------------------------------
+*/
+nav {
+  /*background-image: url("../../images/HeaderPresentation/Background3.png");*/
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+  nav .brand-logo {
+    line-height: 70px;
+    color: #1dac96;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Norwester Regular"; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      margin-right: 25px; }
+      nav ul li:last-child {
+        margin-right: 0; }
+      nav ul li a {
+        text-decoration: none;
+        padding: 25px;
+        display: block;
+        color: #1dac96;
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out; }
+        nav ul li a:hover {
+          color: #222; }
+
+/*# sourceMappingURL=style-28b2845e.css.map*/
