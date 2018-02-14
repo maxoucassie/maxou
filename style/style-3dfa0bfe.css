@@ -416,7 +416,7 @@ nav {
   z-index: 1; }
   nav .brand-logo {
     line-height: 70px;
-    color: #1dac96;
+    color: #fff;
     font-size: 2em;
     text-transform: uppercase;
     text-decoration: none;
@@ -431,10 +431,10 @@ nav {
         text-decoration: none;
         padding: 25px;
         display: block;
-        color: #1dac96;
+        color: #fff;
         -webkit-transition: 0.5s ease-in-out;
         transition: 0.5s ease-in-out; }
         nav ul li a:hover {
           color: #222; }
 
-/*# sourceMappingURL=style-28b2845e.css.map*/
+/*# sourceMappingURL=style-3dfa0bfe.css.map*/
